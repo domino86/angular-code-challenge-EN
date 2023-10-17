@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  imagePath = 'assets/auto.jpg';
+
+  getSelectedType(type: string): void {
+    this.imagePath = `assets/${type.toLowerCase()}.jpg`;
+  }
 }
